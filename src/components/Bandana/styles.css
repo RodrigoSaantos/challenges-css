@@ -1,0 +1,93 @@
+.container {
+  background: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bandana {
+  width: 350px;
+  height: 150px;
+  background-color: #37385a;
+  border-radius: 35px;
+  padding: 25px;
+  position: relative;
+}
+
+.shadow-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #292a44;
+  border-radius: 0 35px 35px 0;
+  height: 100%;
+  width: 138px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.silver {
+  background-color: #9897ae;
+  height: 100%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  position: relative;
+
+}
+
+.shadow-light {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #c0c3db;
+  z-index: 1;
+  clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+  transform: translateX(30%);
+}
+
+.shadow-light+.middle {
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 95px;
+  transform: translateX(20%);
+  clip-path: polygon(25% 0%, 100% 0%, 78% 100%, 0% 100%);
+}
+
+.screw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+.left {
+  align-items: flex-start;
+}
+
+.ball {
+  height: 14px;
+  width: 14px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.village {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.line {
+  height: 100%;
+  width: 12px;
+  background-color: #000;
+  border-radius: 10px;
+}
