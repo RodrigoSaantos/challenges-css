@@ -28,11 +28,17 @@ export function Mjolnir() {
           <div className="cano-header-bottom"></div>
           <div className="wood">
             <div className="cano-silver"></div>
-
+            <div className="cano-silver"></div>
+            <div className="cano-silver"></div>
+            <div className="cano-silver"></div>
+            <div className="cano-silver"></div>
+            <div className="cano-silver"></div>
+            <div className="cano-silver"></div>
           </div>
-          {/* <div className="cano-top"></div>
-          <div className="cano-center"></div>
-          <div className="cano-silver"></div> */}
+          <div className="cano-header-bottom"></div>
+          <div className="cano-header-footer">
+          </div>
+            <div className="corda"></div>
         </div>
       </div>
     </div>

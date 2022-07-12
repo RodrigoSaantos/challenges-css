@@ -10,8 +10,6 @@
   display: flex;
 }
 
-.hammer {}
-
 .header {
   width: 500px;
   height: 300px;
@@ -161,13 +159,12 @@
   bottom: 0;
 }
 
-.mjolnir {}
-
 .cano {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .cano-header {
@@ -216,18 +213,10 @@
   background: #a35b5b;
   border: 2px solid;
   border-top: none;
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
-
-/* .cano-top {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
-  height: 100px;
-  width: 84px;
-  background: #a35b5b;
-  border: 2px solid;
-  border-top: none;
-} */
 
 .cano-silver {
   height: 12px;
@@ -235,19 +224,51 @@
   background: #dddddd;
   border: 2px solid;
   border-radius: 8px;
-  transform: rotate(20deg) translate(-8px, -18px);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  transform: rotate(20deg) translate(0px, 25px);
 }
 
-/* .cano-center {
-  clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 70%);
-  height: 100px;
-  width: 84px;
-  background: #a35b5b;
-  border: 2px solid;
-  border-top: none;
-  transform: translate(0px, -35px);
-} */
+.cano-header-footer {
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  clip-path: polygon(100% 0%, 0% 0%, 15% 100%, 85% 100%);
+  position: relative;
+  border-radius: 152px;
+    border: 1px solid;
+    transform: rotate(180deg);
+}
+
+.cano-header-footer::before {
+  content: "";
+  background: #000;
+  position: absolute;
+  height: 70px;
+  width: 2px;
+  left: 0px;
+  margin: auto;
+  transform: rotate(-17deg) translate(5px, 27px);
+  bottom: 0px;
+}
+
+.cano-header-footer::after {
+  content: "";
+    background: #000;
+    position: absolute;
+    height: 84px;
+    width: 2px;
+    right: 0;
+    margin: auto;
+    transform: rotate(17deg) translate(-3px, 41px);
+    bottom: 0;
+}
+
+.corda {
+  height: 144px;
+  width: 300px;
+  position: absolute;
+  border-radius: 204px;
+  border: 17px solid brown;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(64deg) translate(154px, 26px);
+}
