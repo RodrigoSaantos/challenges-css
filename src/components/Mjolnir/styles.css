@@ -2,8 +2,9 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .hammer-container {
@@ -11,8 +12,8 @@
 }
 
 .header {
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 200px;
   background-color: #dddddd;
   border: 2px solid;
   padding: 8px;
@@ -28,7 +29,7 @@
 
 .hammer-bottom {
   height: 30px;
-  width: 500px;
+  width: 400px;
   background-color: #dddddd;
   border: 2px solid #000;
   border-top: none;
@@ -36,7 +37,7 @@
 
 .hammer-top {
   height: 30px;
-  width: 500px;
+  width: 400px;
   background-color: #dddddd;
   border: 2px solid #000;
   border-bottom: none;
@@ -44,8 +45,8 @@
 
 .hammer-left {
   clip-path: polygon(100% 100%, 100% 0%, 0% 10%, 0% 90%);
-  height: 360px;
-  width: 50px;
+  height: 260px;
+  width: 35px;
   border: 2px solid;
   background-color: #dddddd;
   border-right: none;
@@ -102,8 +103,8 @@
 
 .hammer-right {
   clip-path: polygon(100% 100%, 100% 0%, 0% 10%, 0% 90%);
-  height: 360px;
-  width: 50px;
+  height: 260px;
+  width: 35px;
   border: 2px solid;
   background-color: #dddddd;
   border-right: none;
@@ -168,8 +169,8 @@
 }
 
 .cano-header {
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 40px;
   background-color: #dddddd;
   clip-path: polygon(100% 0%, 0% 0%, 15% 100%, 85% 100%);
   position: relative;
@@ -179,11 +180,11 @@
   content: "";
   background: #000;
   position: absolute;
-  height: 88px;
+  height: 60px;
   width: 2px;
   left: 0;
   margin: auto;
-  transform: rotate(-17deg) translate(5px, 20px);
+  transform: rotate(-20deg) translate(5px, 20px);
   bottom: 0;
 }
 
@@ -191,36 +192,36 @@
   content: "";
   background: #000;
   position: absolute;
-  height: 88px;
+  height: 60px;
   width: 2px;
   right: 0;
   margin: auto;
-  transform: rotate(17deg) translate(-5px, 20px);
+  transform: rotate(20deg) translate(-5px, 20px);
   bottom: 0;
 }
 
 .cano-header-bottom {
   height: 12px;
-  width: 90px;
+  width: 77px;
   background-color: #dddddd;
   border: 2px solid;
   border-radius: 8px;
 }
 
 .wood {
-  height: 550px;
-  width: 82px;
+  height: 400px;
+  width: 65px;
   background: #a35b5b;
   border: 2px solid;
   border-top: none;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.3rem;
 }
 
 .cano-silver {
   height: 12px;
-  width: 98px;
+  width: 77px;
   background: #dddddd;
   border: 2px solid;
   border-radius: 8px;
@@ -228,25 +229,25 @@
 }
 
 .cano-header-footer {
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 42px;
   background-color: #dddddd;
   clip-path: polygon(100% 0%, 0% 0%, 15% 100%, 85% 100%);
   position: relative;
   border-radius: 152px;
-    border: 1px solid;
-    transform: rotate(180deg);
+  border: 1px solid;
+  transform: rotate(180deg);
 }
 
 .cano-header-footer::before {
   content: "";
   background: #000;
   position: absolute;
-  height: 70px;
+  height: 58px;
   width: 2px;
   left: 0px;
   margin: auto;
-  transform: rotate(-17deg) translate(5px, 27px);
+  transform: rotate(-19deg) translate(3px, 27px);
   bottom: 0px;
 }
 
@@ -254,11 +255,11 @@
   content: "";
     background: #000;
     position: absolute;
-    height: 84px;
+    height: 58px;
     width: 2px;
     right: 0;
     margin: auto;
-    transform: rotate(17deg) translate(-3px, 41px);
+    transform: rotate(19deg) translate(-3px, 27px);
     bottom: 0;
 }
 
