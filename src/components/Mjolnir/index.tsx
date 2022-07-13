@@ -37,7 +37,6 @@ export function Mjolnir() {
           <div className="cano-header-bottom"></div>
           <div className="cano-header-footer">
           </div>
-            <div className="corda"></div>
         </div>
       </div>
     </div>
